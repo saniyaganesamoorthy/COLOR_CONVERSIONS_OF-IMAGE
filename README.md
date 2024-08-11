@@ -125,7 +125,7 @@ Anaconda - Python 3.7
 
  ```Python
     import cv2
-    image=cv2.imread('ykimg1.jpg',1)
+    image=cv2.imread('rabbit.jpg',1)
     image=cv2.resize(image,(400,400))
     tag =image[130:200,110:190]
     image[110:180,120:200] = tag
@@ -146,7 +146,7 @@ Anaconda - Python 3.7
 ### vi) BGR and RGB to HSV and GRAY
 ```Python
 import cv2
-img = cv2.imread('ykimg1.jpg',1)
+img = cv2.imread('rabbit.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -162,13 +162,13 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/2b64d776-1792-44ae-a815-17b2a46fc4c9)
+![image](https://github.com/user-attachments/assets/7d9f9efa-516e-4e25-9bfb-d1b05dbccc3a)
 
 
 ### vii) HSV to RGB and BGR
 ```Python
 import cv2
-img = cv2.imread('ykimg1.jpg')
+img = cv2.imread('rabbit.jpg')
 img = cv2.resize(img,(300,200))
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 cv2.imshow('Original HSV Image',img)
@@ -181,12 +181,12 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/e0bc1ec3-9125-4c8c-8e0f-27feae7def28)
+![image](https://github.com/user-attachments/assets/38111c0d-47ca-42d7-b5f6-456425d385d8)
 
 ### viii) RGB and BGR to YCrCb
 ```Python
 import cv2
-img = cv2.imread('ykimg1.jpg')
+img = cv2.imread('rabbit.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -198,14 +198,15 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/a3d88690-e2b8-4b3c-8582-7352dbfffb73)
+![image](https://github.com/user-attachments/assets/e17471ad-b608-4dba-acdb-9f7ceeab13f2)
+
 
 
 
 ### ix) Split and merge RGB Image
 ```Python
 import cv2
-img = cv2.imread('ykimg1.jpg',1)
+img = cv2.imread('rabbit.jpg',1)
 img = cv2.resize(img,(300,200))
 R = img[:,:,2]
 G = img[:,:,1]
@@ -227,7 +228,7 @@ cv2.destroyAllWindows()
 ### x) Split and merge HSV Image
 ```Python
 import cv2
-img = cv2.imread("ykimg1.jpg",1)
+img = cv2.imread("rabbit.jpg",1)
 img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 H,S,V=cv2.split(img)
@@ -241,7 +242,7 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/dcd7ba03-03dd-4cd9-9191-98e5527cdc34)
+![image](https://github.com/user-attachments/assets/d0d2db5d-ec79-4852-baed-8359192088ce)
 
 
 ## Result:
