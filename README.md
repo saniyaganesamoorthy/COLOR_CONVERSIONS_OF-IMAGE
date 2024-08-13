@@ -1,4 +1,4 @@
-### Developed By: Gedipudi Darshani
+### Developed By: GEDIPUDI DARSHANI
 ### Register Number: 212223230062
 
 # COLOR_CONVERSIONS_OF-IMAGE
@@ -37,7 +37,7 @@ Anaconda - Python 3.7
 ### i) Read and display the image
 ```Python
     import cv2
-    image=cv2.imread('rabbit.jpg')
+    image=cv2.imread('photo.jpg')
     image=cv2.resize(image,(400,300))
     cv2.imshow('Image Window',image)
     cv2.waitKey(0)
@@ -47,7 +47,9 @@ Anaconda - Python 3.7
   <td>
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/28ca51b0-d5d6-491a-afac-63a65bb8d7ea)
+![image](https://github.com/user-attachments/assets/a98b0b9e-cd03-4682-beb0-e7991d0d2bef)
+
+
 
 
   </td>
@@ -59,14 +61,15 @@ Anaconda - Python 3.7
 ### ii)Write the image
 ```Python
     import cv2
-    image=cv2.imread('rabbit.jpg',0)
+    image=cv2.imread('photo.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
   </td>
   <td>
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/92eac11b-25a1-49e4-a742-924fef5052ef)
+![image](https://github.com/user-attachments/assets/5d2abca0-65db-46e1-a17d-776bb8a8895b)
+
 
 
   </td>
@@ -77,14 +80,14 @@ Anaconda - Python 3.7
 ### iii)Shape of the Image
 ```Python
     import cv2
-    image=cv2.imread('rabbit.jpg',1)
+    image=cv2.imread('photo.jpg',1)
     print(image.shape)
 ```
   </td>
   <td>
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/c107274e-8b7d-4571-8118-5430a7f4a816)
+![image](https://github.com/user-attachments/assets/6e31ce9e-41ff-4f66-bc51-54dac2b09147)
 
 
 
@@ -97,7 +100,7 @@ Anaconda - Python 3.7
 ```Python
     import random
     import cv2
-    image=cv2.imread('rabbit.jpg',1)
+    image=cv2.imread('photo.jpg',1)
     image=cv2.resize(image,(400,400))
     for i in range (150,200):
       for j in range(image.shape[1]):
@@ -112,8 +115,7 @@ Anaconda - Python 3.7
   <td width="50%">
 
 ### OUTPUT:
-
-![image](https://github.com/user-attachments/assets/d5118697-c0a2-421c-979b-54d1a54662fb)
+![image](https://github.com/user-attachments/assets/9c743ac9-dc74-4700-98c3-450e17b7c082)
 
 
   </td>
@@ -125,7 +127,7 @@ Anaconda - Python 3.7
 
  ```Python
     import cv2
-    image=cv2.imread('rabbit.jpg',1)
+    image=cv2.imread('photo.jpg',1)
     image=cv2.resize(image,(400,400))
     tag =image[130:200,110:190]
     image[110:180,120:200] = tag
@@ -137,7 +139,9 @@ Anaconda - Python 3.7
   <td>
     
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/fa391ede-acf7-49ff-89d9-a821f9b5118e)
+![image](https://github.com/user-attachments/assets/e241a756-1dc5-4ab5-84b1-bfeb731bc1f1)
+
+
 
   </td>
   </tr>
@@ -146,7 +150,7 @@ Anaconda - Python 3.7
 ### vi) BGR and RGB to HSV and GRAY
 ```Python
 import cv2
-img = cv2.imread('rabbit.jpg',1)
+img = cv2.imread('photo.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -162,13 +166,15 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/7d9f9efa-516e-4e25-9bfb-d1b05dbccc3a)
+![image](https://github.com/user-attachments/assets/4168991e-f144-4dd8-a4f4-deae88cf1328)
+
+
 
 
 ### vii) HSV to RGB and BGR
 ```Python
 import cv2
-img = cv2.imread('rabbit.jpg')
+img = cv2.imread('photo.jpg')
 img = cv2.resize(img,(300,200))
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 cv2.imshow('Original HSV Image',img)
@@ -181,12 +187,15 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/38111c0d-47ca-42d7-b5f6-456425d385d8)
+![image](https://github.com/user-attachments/assets/af8f95cc-5e09-42aa-bf29-4b1f720abf64)
+
+
+
 
 ### viii) RGB and BGR to YCrCb
 ```Python
 import cv2
-img = cv2.imread('rabbit.jpg')
+img = cv2.imread('photo.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -198,15 +207,14 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/e17471ad-b608-4dba-acdb-9f7ceeab13f2)
-
+![image](https://github.com/user-attachments/assets/f05e7e4c-7bcd-4c4c-b29f-ca389c2a8870)
 
 
 
 ### ix) Split and merge RGB Image
 ```Python
 import cv2
-img = cv2.imread('rabbit.jpg',1)
+img = cv2.imread('photo.jpg',1)
 img = cv2.resize(img,(300,200))
 R = img[:,:,2]
 G = img[:,:,1]
@@ -221,14 +229,15 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/47f30148-a272-4fd8-82b2-c00b3e0f0a24)
+![image](https://github.com/user-attachments/assets/fddf8c78-cdd3-45d7-b62a-8473518bc35f)
+
 
 
 
 ### x) Split and merge HSV Image
 ```Python
 import cv2
-img = cv2.imread("rabbit.jpg",1)
+img = cv2.imread("photo.jpg",1)
 img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 H,S,V=cv2.split(img)
@@ -242,7 +251,8 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/d0d2db5d-ec79-4852-baed-8359192088ce)
+![image](https://github.com/user-attachments/assets/6fc9cef6-7652-491e-ad41-341f8ce3c8ab)
+
 
 
 ## Result:
