@@ -1,5 +1,5 @@
-### Developed By: GEDIPUDI DARSHANI
-### Register Number: 212223230062
+### Developed By: SANIYA G
+### Register Number: 212223240147
 
 # COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
