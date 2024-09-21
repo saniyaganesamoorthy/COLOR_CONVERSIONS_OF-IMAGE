@@ -1,5 +1,5 @@
-## Developed By : ADCHAYA KIRUTHIKA M.S
-## Register Number : 212223230005
+## Developed By : SANIYA G
+## Register Number : 212223240147
 # COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
