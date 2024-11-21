@@ -52,10 +52,7 @@ Load an image from your local directory and display it.
 	Flip the original image vertically and display it.
 ### Step8:
 	Save the final modified image to your local directory.
-```
-Developed By: Gedipudi Darshani
-Register Number: 212223230062
-```
+
 # Program:
 
 ### 1)Read and Display an Image
